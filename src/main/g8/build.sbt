@@ -13,6 +13,6 @@ lazy val verified = project
   .in(file("verified"))
   .enablePlugins(StainlessPlugin)
   .settings(
-    name := "$name;format="lower,hyphen"$-verified"
+    name := "$name;format="lower,hyphen"$-verified",
+    stainlessEnabled := true,
   )
-
